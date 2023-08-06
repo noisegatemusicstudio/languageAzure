@@ -36,23 +36,30 @@ csv_file_path = "labelled_feedback.csv"
 # Call the function to extract rows to text files
 #extract_rows_to_text_files(csv_file_path)
 
-def custom_text_classification():    
-    # [START single_label_classify]
+# Function to perform custom text classification
+def custom_text_classification():
     try:
+        # Azure Cognitive Services endpoint and key
         endpoint = 'https://exoduslanguage.cognitiveservices.azure.com/'
         key = os.environ.get("AZURE_LANGUAGE_KEY")
+        
+        # Read data from an Excel file
         data = pd.read_excel('Segmentation.xlsx')
-        document=data["Text"].tolist()
-            
+        document = data["Text"].tolist()
+        
+        # Initialize Text Analytics client
         text_analytics_client = TextAnalyticsClient(
             endpoint=endpoint,
             credential=AzureKeyCredential(key),
         )
         
+        # Perform single-label classification
         poller = text_analytics_client.begin_single_label_classify(document, project_name='exodusSingle', deployment_name='exodus')
-
+        
+        # Get classification results for each document
         document_results = poller.result()
-        categories=[]        
+        categories = []
+        
         for doc, classification_result in zip(document, document_results):
             if classification_result.kind == "CustomDocumentClassification":
                 classification = classification_result.classifications[0]
@@ -64,13 +71,18 @@ def custom_text_classification():
                 print("Document text '{}' has an error with code '{}' and message '{}'".format(
                     doc, classification_result.error.code, classification_result.error.message
                 ))
+            
             # Print the classification result
             print(classification_result.classifications)
             print()  # Print an empty line for readability
-        df=pd.read_excel("Segmentation.xlsx")
-        df["Categories"]=categories
+        
+        # Add the categories to the data
+        data["Categories"] = categories
+        
+        # Save the analyzed data to a new Excel file
         with pd.ExcelWriter('Segmentation_Analyzed.xlsx', engine='openpyxl') as writer:
-            df.to_excel(writer, index=False)  
+            data.to_excel(writer, index=False)
+    
     except Exception as e:
         print(f"An error occurred: {str(e)}")
             
