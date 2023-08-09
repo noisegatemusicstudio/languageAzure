@@ -33,6 +33,7 @@ def read_qr_code(image_path):
 
         # Display the image with the bounding box (optional)
         cv2.imshow("QR Code Detection", image)
+        print("Press any key to close the image display/Wait for 5 seconds")
         cv2.waitKey(5000) # Wait for 5 seconds or a key press
         cv2.destroyAllWindows()
 
