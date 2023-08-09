@@ -7,11 +7,20 @@ def read_qr_code(image_path):
     # Read the image file
     image = cv2.imread(image_path)
 
+    # Convert to grayscale
+    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+    # Apply Gaussian blur
+    blur = cv2.GaussianBlur(gray, (5, 5), 0)
+
+    # Apply thresholding
+    _, thresholded = cv2.threshold(blur, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+
     # Initialize the QRCodeDetector
     qr_code_detector = cv2.QRCodeDetector()
 
-    # Detect and decode the QR code
-    decoded_info, points, _ = qr_code_detector.detectAndDecode(image)
+    # Detect and decode the QR code using the thresholded image
+    decoded_info, points, _ = qr_code_detector.detectAndDecode(thresholded)
 
     if points is not None:
         # If a QR code is detected, print the decoded information
