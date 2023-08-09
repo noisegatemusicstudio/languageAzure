@@ -1,5 +1,8 @@
 # qrScanner
 
+## Pre-requisites
+install Python 3.x
+
 ## Installation
 
 Clone the repository:
