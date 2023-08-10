@@ -1,0 +1,1063 @@
+{
+    "projectFileVersion": "2022-05-01",
+    "stringIndexType": "Utf16CodeUnit",
+    "metadata": {
+        "projectKind": "CustomSingleLabelClassification",
+        "storageInputContainerName": "exodus",
+        "settings": {},
+        "projectName": "exodusSingle_json_label",
+        "multilingual": true,
+        "description": "Project-description",
+        "language": "en-us"
+    },
+    "assets": {
+        "projectKind": "CustomSingleLabelClassification",
+        "classes": [
+            {
+                "category": "vacation"
+            },
+            {
+                "category": "music"
+            },
+            {
+                "category": "service"
+            },
+            {
+                "category": "movie"
+            },
+            {
+                "category": "website"
+            },
+            {
+                "category": "book"
+            },
+            {
+                "category": "product"
+            },
+            {
+                "category": "food"
+            },
+            {
+                "category": "others"
+            }
+        ],
+        "documents": [
+            {
+                "location": "row_0.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "product"
+                }
+            },
+            {
+                "location": "row_1.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "service"
+                }
+            },
+            {
+                "location": "row_2.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "movie"
+                }
+            },
+            {
+                "location": "row_3.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "service"
+                }
+            },
+            {
+                "location": "row_4.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "food"
+                }
+            },
+            {
+                "location": "row_5.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "product"
+                }
+            },
+            {
+                "location": "row_6.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "music"
+                }
+            },
+            {
+                "location": "row_7.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "website"
+                }
+            },
+            {
+                "location": "row_8.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "movie"
+                }
+            },
+            {
+                "location": "row_9.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "service"
+                }
+            },
+            {
+                "location": "row_10.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "book"
+                }
+            },
+            {
+                "location": "row_11.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "product"
+                }
+            },
+            {
+                "location": "row_12.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "vacation"
+                }
+            },
+            {
+                "location": "row_13.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "food"
+                }
+            },
+            {
+                "location": "row_14.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "music"
+                }
+            },
+            {
+                "location": "row_15.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "website"
+                }
+            },
+            {
+                "location": "row_16.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "vacation"
+                }
+            },
+            {
+                "location": "row_17.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "product"
+                }
+            },
+            {
+                "location": "row_18.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "music"
+                }
+            },
+            {
+                "location": "row_19.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "service"
+                }
+            },
+            {
+                "location": "row_20.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "movie"
+                }
+            },
+            {
+                "location": "row_21.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "service"
+                }
+            },
+            {
+                "location": "row_22.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "book"
+                }
+            },
+            {
+                "location": "row_23.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "product"
+                }
+            },
+            {
+                "location": "row_24.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "vacation"
+                }
+            },
+            {
+                "location": "row_25.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "vacation"
+                }
+            },
+            {
+                "location": "row_26.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "food"
+                }
+            },
+            {
+                "location": "row_27.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "music"
+                }
+            },
+            {
+                "location": "row_28.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "website"
+                }
+            },
+            {
+                "location": "row_29.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "vacation"
+                }
+            },
+            {
+                "location": "row_30.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "product"
+                }
+            },
+            {
+                "location": "row_31.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "music"
+                }
+            },
+            {
+                "location": "row_32.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "service"
+                }
+            },
+            {
+                "location": "row_33.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "food"
+                }
+            },
+            {
+                "location": "row_34.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "product"
+                }
+            },
+            {
+                "location": "row_35.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "book"
+                }
+            },
+            {
+                "location": "row_36.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "service"
+                }
+            },
+            {
+                "location": "row_37.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "service"
+                }
+            },
+            {
+                "location": "row_38.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "music"
+                }
+            },
+            {
+                "location": "row_39.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "food"
+                }
+            },
+            {
+                "location": "row_40.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "music"
+                }
+            },
+            {
+                "location": "row_41.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "website"
+                }
+            },
+            {
+                "location": "row_42.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "vacation"
+                }
+            },
+            {
+                "location": "row_43.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "product"
+                }
+            },
+            {
+                "location": "row_44.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "music"
+                }
+            },
+            {
+                "location": "row_45.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "service"
+                }
+            },
+            {
+                "location": "row_46.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "food"
+                }
+            },
+            {
+                "location": "row_47.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "movie"
+                }
+            },
+            {
+                "location": "row_48.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "others"
+                }
+            },
+            {
+                "location": "row_49.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "service"
+                }
+            },
+            {
+                "location": "row_50.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "book"
+                }
+            },
+            {
+                "location": "row_51.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "product"
+                }
+            },
+            {
+                "location": "row_52.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "website"
+                }
+            },
+            {
+                "location": "row_53.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "service"
+                }
+            },
+            {
+                "location": "row_54.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "music"
+                }
+            },
+            {
+                "location": "row_55.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "service"
+                }
+            },
+            {
+                "location": "row_56.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "service"
+                }
+            },
+            {
+                "location": "row_57.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "food"
+                }
+            },
+            {
+                "location": "row_58.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "music"
+                }
+            },
+            {
+                "location": "row_59.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "website"
+                }
+            },
+            {
+                "location": "row_60.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "food"
+                }
+            },
+            {
+                "location": "row_61.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "others"
+                }
+            },
+            {
+                "location": "row_62.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "music"
+                }
+            },
+            {
+                "location": "row_63.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "website"
+                }
+            },
+            {
+                "location": "row_64.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "vacation"
+                }
+            },
+            {
+                "location": "row_65.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "service"
+                }
+            },
+            {
+                "location": "row_66.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "others"
+                }
+            },
+            {
+                "location": "row_67.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "food"
+                }
+            },
+            {
+                "location": "row_68.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "music"
+                }
+            },
+            {
+                "location": "row_69.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "website"
+                }
+            },
+            {
+                "location": "row_70.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "vacation"
+                }
+            },
+            {
+                "location": "row_71.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "product"
+                }
+            },
+            {
+                "location": "row_72.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "book"
+                }
+            },
+            {
+                "location": "row_73.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "service"
+                }
+            },
+            {
+                "location": "row_74.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "service"
+                }
+            },
+            {
+                "location": "row_75.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "service"
+                }
+            },
+            {
+                "location": "row_76.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "food"
+                }
+            },
+            {
+                "location": "row_77.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "music"
+                }
+            },
+            {
+                "location": "row_78.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "website"
+                }
+            },
+            {
+                "location": "row_79.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "product"
+                }
+            },
+            {
+                "location": "row_80.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "service"
+                }
+            },
+            {
+                "location": "row_81.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "movie"
+                }
+            },
+            {
+                "location": "row_82.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "service"
+                }
+            },
+            {
+                "location": "row_83.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "food"
+                }
+            },
+            {
+                "location": "row_84.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "product"
+                }
+            },
+            {
+                "location": "row_85.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "music"
+                }
+            },
+            {
+                "location": "row_86.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "website"
+                }
+            },
+            {
+                "location": "row_87.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "movie"
+                }
+            },
+            {
+                "location": "row_88.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "service"
+                }
+            },
+            {
+                "location": "row_89.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "book"
+                }
+            },
+            {
+                "location": "row_90.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "product"
+                }
+            },
+            {
+                "location": "row_91.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "vacation"
+                }
+            },
+            {
+                "location": "row_92.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "food"
+                }
+            },
+            {
+                "location": "row_93.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "music"
+                }
+            },
+            {
+                "location": "row_94.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "website"
+                }
+            },
+            {
+                "location": "row_95.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "vacation"
+                }
+            },
+            {
+                "location": "row_96.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "product"
+                }
+            },
+            {
+                "location": "row_97.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "product"
+                }
+            },
+            {
+                "location": "row_98.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "book"
+                }
+            },
+            {
+                "location": "row_99.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "book"
+                }
+            },
+            {
+                "location": "row_100.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "book"
+                }
+            },
+            {
+                "location": "row_101.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "book"
+                }
+            },
+            {
+                "location": "row_102.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "book"
+                }
+            },
+            {
+                "location": "row_103.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "book"
+                }
+            },
+            {
+                "location": "row_104.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "book"
+                }
+            },
+            {
+                "location": "row_105.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "book"
+                }
+            },
+            {
+                "location": "row_106.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "book"
+                }
+            },
+            {
+                "location": "row_107.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "vacation"
+                }
+            },
+            {
+                "location": "row_108.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "vacation"
+                }
+            },
+            {
+                "location": "row_109.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "vacation"
+                }
+            },
+            {
+                "location": "row_110.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "food"
+                }
+            },
+            {
+                "location": "row_111.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "food"
+                }
+            },
+            {
+                "location": "row_112.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "food"
+                }
+            },
+            {
+                "location": "row_113.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "website"
+                }
+            },
+            {
+                "location": "row_114.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "website"
+                }
+            },
+            {
+                "location": "row_115.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "website"
+                }
+            },
+            {
+                "location": "row_116.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "website"
+                }
+            },
+            {
+                "location": "row_117.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "movie"
+                }
+            },
+            {
+                "location": "row_118.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "movie"
+                }
+            },
+            {
+                "location": "row_119.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "movie"
+                }
+            },
+            {
+                "location": "row_120.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "movie"
+                }
+            },
+            {
+                "location": "row_121.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "movie"
+                }
+            },
+            {
+                "location": "row_122.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "movie"
+                }
+            },
+            {
+                "location": "row_123.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "movie"
+                }
+            },
+            {
+                "location": "row_124.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "movie"
+                }
+            },
+            {
+                "location": "row_125.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "movie"
+                }
+            },
+            {
+                "location": "row_126.txt",
+                "language": "en-us",
+                "dataset": "Train",
+                "class": {
+                    "category": "movie"
+                }
+            }
+        ]
+    }
+}

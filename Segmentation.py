@@ -1,5 +1,7 @@
 import os
 import pandas as pd
+import csv
+import json
 from openpyxl import load_workbook
 from azure.core.credentials import AzureKeyCredential
 from azure.ai.textanalytics import TextAnalyticsClient
@@ -31,13 +33,13 @@ def extract_rows_to_text_files(file_path):
         
 
 # Provide the path to your Excel file
-csv_file_path = "labelled_feedback.csv"
+csv_file_path = "labelled_training_data.csv"
 
 # Call the function to extract rows to text files
 #extract_rows_to_text_files(csv_file_path)
 
 # Function to perform custom text classification
-def custom_text_classification():
+def custom_text_classification(project_name, deployment_name):
     try:
         # Azure Cognitive Services endpoint and key
         endpoint = 'https://exoduslanguage.cognitiveservices.azure.com/'
@@ -54,7 +56,7 @@ def custom_text_classification():
         )
         
         # Perform single-label classification
-        poller = text_analytics_client.begin_single_label_classify(document, project_name='exodusSingle', deployment_name='exodus')
+        poller = text_analytics_client.begin_single_label_classify(document, project_name=project_name, deployment_name=deployment_name)
         
         # Get classification results for each document
         document_results = poller.result()
@@ -86,4 +88,60 @@ def custom_text_classification():
     except Exception as e:
         print(f"An error occurred: {str(e)}")
             
-custom_text_classification()
+#custom_text_classification('exodusSingle', 'exodus')
+
+def convert_labelled_data_to_json(file_path, language_code, cointainer_name, project_name, class_column_name):
+    try:
+        # Read CSV file or Excel file and convert it to a Pandas DataFrame
+        if file_path.endswith('.csv'):  # Check if the file has a CSV extension
+                df = pd.read_csv(file_path)
+        elif file_path.endswith('.xlsx'):  # Check if the file has an XLSX extension
+                df = pd.read_excel(file_path)
+        else:
+            raise ValueError("Unsupported file format. Only CSV and Excel (XLSX) files are supported.")
+
+        # Create the JSON structure
+        json_data = {
+            "projectFileVersion": "2022-05-01",
+            "stringIndexType": "Utf16CodeUnit",
+            "metadata": {
+                "projectKind": "CustomSingleLabelClassification",
+                "storageInputContainerName": cointainer_name,
+                "settings": {},
+                "projectName": project_name,
+                "multilingual": True,
+                "description": "Project-description",
+                "language": language_code
+            },
+            "assets": {
+                "projectKind": "CustomSingleLabelClassification",
+                "classes": [],
+                "documents": []
+            }
+        }
+
+        # Add classes from the data
+        classes = set(df[class_column_name])
+        json_data['assets']['classes'] = [{'category': c} for c in classes]
+
+        # Add documents from the data
+        for index, row in df.iterrows():
+            document = {
+                "location": f"row_{index}.txt",
+                "language": language_code,
+                "dataset": "Train",
+                "class": {"category": row[class_column_name]}
+            }
+            json_data['assets']['documents'].append(document)
+
+        # Convert the JSON data to a string
+        json_string = json.dumps(json_data, indent=4)
+
+        # Save the JSON data to a file
+        with open('labelled_training_data.json', 'w') as file:
+            file.write(json_string)
+        
+    except Exception as e:
+        print(f"An error occurred: {str(e)}")
+        
+convert_labelled_data_to_json("labelled_training_data.csv", "en-us", "exodus", "exodusSingle_json_label", "Categories")
