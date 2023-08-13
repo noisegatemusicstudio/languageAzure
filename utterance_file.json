@@ -1,0 +1,744 @@
+[
+    {
+        "text": "I love this product!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "product",
+        "entities": []
+    },
+    {
+        "text": "The service was terrible.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "service",
+        "entities": []
+    },
+    {
+        "text": "This movie is amazing!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "movie",
+        "entities": []
+    },
+    {
+        "text": "I'm so disappointed with their customer support.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "service",
+        "entities": []
+    },
+    {
+        "text": "Just had the best meal of my life!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "food",
+        "entities": []
+    },
+    {
+        "text": "The quality of this product is subpar.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "product",
+        "entities": []
+    },
+    {
+        "text": "I can't stop listening to this song. It's incredible!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "music",
+        "entities": []
+    },
+    {
+        "text": "Their website is so user-friendly. Love it!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "website",
+        "entities": []
+    },
+    {
+        "text": "I loved the movie! It was fantastic!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "movie",
+        "entities": []
+    },
+    {
+        "text": "The customer service was terrible.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "service",
+        "entities": []
+    },
+    {
+        "text": "This book made me feel inspired. Highly recommended!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "book",
+        "entities": []
+    },
+    {
+        "text": "I'm extremely disappointed with their product quality.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "product",
+        "entities": []
+    },
+    {
+        "text": "Just had the most amazing vacation! I can't wait to go back.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "vacation",
+        "entities": []
+    },
+    {
+        "text": "The food at this restaurant was awful. Never going back again!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "food",
+        "entities": []
+    },
+    {
+        "text": "I can't stop listening to this song. It's my new favorite!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "music",
+        "entities": []
+    },
+    {
+        "text": "Their website is so confusing and poorly designed.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "website",
+        "entities": []
+    },
+    {
+        "text": "I had an incredible experience at the theme park. So much fun!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "vacation",
+        "entities": []
+    },
+    {
+        "text": "The product arrived damaged. Very disappointed.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "product",
+        "entities": []
+    },
+    {
+        "text": "The concert was absolutely breathtaking. Best performance ever!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "music",
+        "entities": []
+    },
+    {
+        "text": "I had a terrible experience with their customer support.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "service",
+        "entities": []
+    },
+    {
+        "text": "This movie is a masterpiece! I was blown away.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "movie",
+        "entities": []
+    },
+    {
+        "text": "The customer service at this store is top-notch.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "service",
+        "entities": []
+    },
+    {
+        "text": "I'm disappointed with the ending of this book. It fell flat.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "book",
+        "entities": []
+    },
+    {
+        "text": "The product I received was damaged. Unacceptable.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "product",
+        "entities": []
+    },
+    {
+        "text": "Just had the worst flight experience. Delayed and rude staff.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "vacation",
+        "entities": []
+    },
+    {
+        "text": "The hotel stay was absolutely amazing! Luxury at its finest.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "vacation",
+        "entities": []
+    },
+    {
+        "text": "The food at this restaurant was outstanding. Highly recommended!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "food",
+        "entities": []
+    },
+    {
+        "text": "This playlist is my go-to for workouts. Energizing and motivating!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "music",
+        "entities": []
+    },
+    {
+        "text": "I had a frustrating experience navigating through their website.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "website",
+        "entities": []
+    },
+    {
+        "text": "The roller coaster ride was thrilling! Heart-pounding excitement!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "vacation",
+        "entities": []
+    },
+    {
+        "text": "The product I ordered never arrived. Terrible service.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "product",
+        "entities": []
+    },
+    {
+        "text": "I can't get enough of this band. Their music is incredible!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "music",
+        "entities": []
+    },
+    {
+        "text": "I had a great chat with their customer support. Helpful and friendly.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "service",
+        "entities": []
+    },
+    {
+        "text": "This restaurant has the most delicious food. I can't wait to go back!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "food",
+        "entities": []
+    },
+    {
+        "text": "The product I purchased broke within a week. Poor quality.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "product",
+        "entities": []
+    },
+    {
+        "text": "This book is thought-provoking and beautifully written. Highly recommended!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "book",
+        "entities": []
+    },
+    {
+        "text": "The customer service at this store is exceptional. They went above and beyond.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "service",
+        "entities": []
+    },
+    {
+        "text": "I had a terrible experience with their technical support. No resolution.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "service",
+        "entities": []
+    },
+    {
+        "text": "The live concert was electrifying! The band's energy was contagious.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "music",
+        "entities": []
+    },
+    {
+        "text": "I'm disappointed with the food at this restaurant. It was tasteless.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "food",
+        "entities": []
+    },
+    {
+        "text": "This song always puts me in a good mood. It's my go-to feel-good track!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "music",
+        "entities": []
+    },
+    {
+        "text": "The website is slow and unresponsive. Difficult to navigate.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "website",
+        "entities": []
+    },
+    {
+        "text": "The roller coaster ride was exhilarating! Pure adrenaline rush!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "vacation",
+        "entities": []
+    },
+    {
+        "text": "The product I ordered arrived damaged. Very disappointed with the packaging.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "product",
+        "entities": []
+    },
+    {
+        "text": "I'm captivated by this band's unique sound. They're a breath of fresh air!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "music",
+        "entities": []
+    },
+    {
+        "text": "The customer support was quick to respond and resolved my issue. Impressed!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "service",
+        "entities": []
+    },
+    {
+        "text": "This restaurant has the best food. I highly recommend it!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "food",
+        "entities": []
+    },
+    {
+        "text": "The plot of this movie is confusing and hard to follow.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "movie",
+        "entities": []
+    },
+    {
+        "text": "I'm addicted to this game. It's so much fun!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "others",
+        "entities": []
+    },
+    {
+        "text": "The customer service at this hotel was terrible. Avoid at all costs.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "service",
+        "entities": []
+    },
+    {
+        "text": "This book bored me to tears. I couldn't finish it.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "book",
+        "entities": []
+    },
+    {
+        "text": "I'm impressed with the sound quality of these headphones. Excellent!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "product",
+        "entities": []
+    },
+    {
+        "text": "The website design is sleek and user-friendly. Easy to navigate.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "website",
+        "entities": []
+    },
+    {
+        "text": "I had a terrible experience with their delivery service. Late and unprofessional.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "service",
+        "entities": []
+    },
+    {
+        "text": "The concert was mind-blowing! The band knows how to put on a show.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "music",
+        "entities": []
+    },
+    {
+        "text": "I'm extremely disappointed with the customer support. No resolution.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "service",
+        "entities": []
+    },
+    {
+        "text": "The hotel staff were rude and unprofessional. Terrible customer service.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "service",
+        "entities": []
+    },
+    {
+        "text": "The food at this restaurant was mediocre. Nothing special.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "food",
+        "entities": []
+    },
+    {
+        "text": "This song always puts me in a nostalgic mood. It reminds me of good times.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "music",
+        "entities": []
+    },
+    {
+        "text": "The website loading speed is frustratingly slow. Needs improvement.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "website",
+        "entities": []
+    },
+    {
+        "text": "The food at this cafe exceeded my expectations. Absolutely delicious!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "food",
+        "entities": []
+    },
+    {
+        "text": "I'm disappointed with the ending of this TV show. It left too many unanswered questions.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "others",
+        "entities": []
+    },
+    {
+        "text": "This album is a masterpiece. Every song is a work of art!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "music",
+        "entities": []
+    },
+    {
+        "text": "The website layout is cluttered and confusing. Difficult to find information.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "website",
+        "entities": []
+    },
+    {
+        "text": "The roller coaster at this theme park is a thrilling experience. A must-try!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "vacation",
+        "entities": []
+    },
+    {
+        "text": "The product I ordered never arrived. Poor customer service.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "service",
+        "entities": []
+    },
+    {
+        "text": "I'm in awe of this artist's talent. Their paintings are breathtaking!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "others",
+        "entities": []
+    },
+    {
+        "text": "The food at this restaurant was disappointing. Not worth the price.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "food",
+        "entities": []
+    },
+    {
+        "text": "This playlist is perfect for relaxation. Soothing and calming!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "music",
+        "entities": []
+    },
+    {
+        "text": "The website navigation is smooth and intuitive. I found what I needed quickly.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "website",
+        "entities": []
+    },
+    {
+        "text": "The ride on this cruise ship was an unforgettable experience. I loved every moment!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "vacation",
+        "entities": []
+    },
+    {
+        "text": "The product I received was of poor quality. It broke after a few uses.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "product",
+        "entities": []
+    },
+    {
+        "text": "This book kept me hooked from start to finish. A captivating read!",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "book",
+        "entities": []
+    },
+    {
+        "text": "The customer service at this store is outstanding. They truly care about their customers.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "service",
+        "entities": []
+    },
+    {
+        "text": "I had a frustrating experience with their technical support. No resolution provided.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "service",
+        "entities": []
+    },
+    {
+        "text": "This product really suits my needs.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "product",
+        "entities": []
+    },
+    {
+        "text": "I bought a television last week and the quality is great.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "product",
+        "entities": []
+    },
+    {
+        "text": "I like reading book, especially about superhero.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "book",
+        "entities": []
+    },
+    {
+        "text": "I learn a lot from the book.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "book",
+        "entities": []
+    },
+    {
+        "text": "I like reading, but not I don't have much time to read.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "book",
+        "entities": []
+    },
+    {
+        "text": "When I am reading book, I feel really relax.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "book",
+        "entities": []
+    },
+    {
+        "text": "Yes, you are right, reading book make me feel happier.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "book",
+        "entities": []
+    },
+    {
+        "text": "I don't like reading book, it make me feel tired.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "book",
+        "entities": []
+    },
+    {
+        "text": "I hate reading book, especially those about history.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "book",
+        "entities": []
+    },
+    {
+        "text": "It is so boring reading.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "book",
+        "entities": []
+    },
+    {
+        "text": "I don't buy book. I read at the book shop.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "book",
+        "entities": []
+    },
+    {
+        "text": "I am going to Taiwan tonight.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "vacation",
+        "entities": []
+    },
+    {
+        "text": "I will definitely have fun and enjoy my holiday.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "vacation",
+        "entities": []
+    },
+    {
+        "text": "The trip to Hong Kong is bad. Too crowded.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "vacation",
+        "entities": []
+    },
+    {
+        "text": "I like eating pork. It is delicious.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "food",
+        "entities": []
+    },
+    {
+        "text": "My mum cook really good.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "food",
+        "entities": []
+    },
+    {
+        "text": "The food here is not bad.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "food",
+        "entities": []
+    },
+    {
+        "text": "This website takes my phone too long to load.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "website",
+        "entities": []
+    },
+    {
+        "text": "The layout of this website is bad. It makes me feel tired.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "website",
+        "entities": []
+    },
+    {
+        "text": "I like the colour of this website.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "website",
+        "entities": []
+    },
+    {
+        "text": "This website is amazing. It allows me to search for anything.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "website",
+        "entities": []
+    },
+    {
+        "text": "This movie is so boring.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "movie",
+        "entities": []
+    },
+    {
+        "text": "This movie is hard to understand.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "movie",
+        "entities": []
+    },
+    {
+        "text": "This movie is good to watch.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "movie",
+        "entities": []
+    },
+    {
+        "text": "This movie is about superhero.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "movie",
+        "entities": []
+    },
+    {
+        "text": "Wow, this movie is amazing.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "movie",
+        "entities": []
+    },
+    {
+        "text": "It wastes me 2 hours to watch it.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "movie",
+        "entities": []
+    },
+    {
+        "text": "This movie is not bad but just doesn't worth it.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "movie",
+        "entities": []
+    },
+    {
+        "text": "It is the best movie that I have watched.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "movie",
+        "entities": []
+    },
+    {
+        "text": "It is the worst movie that I have watched.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "movie",
+        "entities": []
+    },
+    {
+        "text": "This movie is fair.",
+        "language": "en-us",
+        "dataset": "Train",
+        "intent": "movie",
+        "entities": []
+    }
+]

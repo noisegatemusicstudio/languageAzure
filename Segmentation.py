@@ -1,6 +1,5 @@
 import os
 import pandas as pd
-import csv
 import json
 from openpyxl import load_workbook
 from azure.core.credentials import AzureKeyCredential
@@ -82,13 +81,13 @@ def custom_text_classification(project_name, deployment_name):
         data["Categories"] = categories
         
         # Save the analyzed data to a new Excel file
-        with pd.ExcelWriter('Segmentation_Analyzed.xlsx', engine='openpyxl') as writer:
+        with pd.ExcelWriter('Segmentation_classification_Analyzed.xlsx', engine='openpyxl') as writer:
             data.to_excel(writer, index=False)
     
     except Exception as e:
         print(f"An error occurred: {str(e)}")
             
-#custom_text_classification('exodusSingle', 'exodus')
+custom_text_classification('exodusSingle', 'exodus')
 
 def convert_labelled_data_to_json(file_path, language_code, cointainer_name, project_name, class_column_name):
     try:
@@ -144,4 +143,4 @@ def convert_labelled_data_to_json(file_path, language_code, cointainer_name, pro
     except Exception as e:
         print(f"An error occurred: {str(e)}")
         
-convert_labelled_data_to_json("labelled_training_data.csv", "en-us", "exodus", "exodusSingle_json_label", "Categories")
+#convert_labelled_data_to_json("labelled_training_data.csv", "en-us", "exodus", "exodusSingle_json_label", "Categories")
