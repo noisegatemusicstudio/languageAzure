@@ -17,7 +17,13 @@
                 "category": "vacation"
             },
             {
-                "category": "music"
+                "category": "website"
+            },
+            {
+                "category": "book"
+            },
+            {
+                "category": "food"
             },
             {
                 "category": "service"
@@ -26,19 +32,13 @@
                 "category": "movie"
             },
             {
-                "category": "website"
-            },
-            {
-                "category": "book"
-            },
-            {
-                "category": "product"
-            },
-            {
-                "category": "food"
+                "category": "music"
             },
             {
                 "category": "others"
+            },
+            {
+                "category": "product"
             }
         ],
         "documents": [

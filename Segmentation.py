@@ -87,7 +87,7 @@ def custom_text_classification(project_name, deployment_name):
     except Exception as e:
         print(f"An error occurred: {str(e)}")
             
-custom_text_classification('exodusSingle', 'exodus')
+#custom_text_classification('exodusSingle', 'exodus')
 
 def convert_labelled_data_to_json(file_path, language_code, cointainer_name, project_name, class_column_name):
     try:
@@ -137,10 +137,10 @@ def convert_labelled_data_to_json(file_path, language_code, cointainer_name, pro
         json_string = json.dumps(json_data, indent=4)
 
         # Save the JSON data to a file
-        with open('labelled_training_data.json', 'w') as file:
+        with open('text_classification.json', 'w') as file:
             file.write(json_string)
         
     except Exception as e:
         print(f"An error occurred: {str(e)}")
         
-#convert_labelled_data_to_json("labelled_training_data.csv", "en-us", "exodus", "exodusSingle_json_label", "Categories")
+convert_labelled_data_to_json("labelled_training_data.csv", "en-us", "exodus", "exodusSingle_json_label", "Categories")
