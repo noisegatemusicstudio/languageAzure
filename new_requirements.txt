@@ -1,0 +1,33 @@
+click ==
+cloudpickle ==
+contourpy ==
+cycler ==
+cytoolz ==
+dask ==
+fonttools==4.25.0
+fsspec ==
+imagecodecs ==
+imageio ==
+importlib-metadata ==
+kiwisolver ==
+lazy_loader ==
+locket ==
+matplotlib ==
+munkres==1.1.4
+networkx ==
+numpy ==
+packaging ==
+partd ==
+Pillow==9.4.0
+pyparsing ==
+python-dateutil ==
+PyWavelets ==
+PyYAML ==
+pyzbar ==
+scikit-image ==
+scipy==1.9.3
+six ==
+tifffile ==
+toolz ==
+tornado ==
+zipp ==
