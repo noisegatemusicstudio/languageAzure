@@ -58,59 +58,85 @@ def convert_labelled_data_to_utterance_file(file_path, language_code):
         
 #convert_labelled_data_to_utterance_file("labelled_training_data.csv", "en-us")
 
-def convert_labelled_data_to_json(file_path, language_code, cointainer_name, project_name, class_column_name):
+def convert_labelled_data_to_json(file_path, language_code, project_name, text_data_column, class_column_name):
     try:
         # Read CSV file or Excel file and convert it to a Pandas DataFrame
         if file_path.endswith('.csv'):  # Check if the file has a CSV extension
-                df = pd.read_csv(file_path)
+            df = pd.read_csv(file_path)
         elif file_path.endswith('.xlsx'):  # Check if the file has an XLSX extension
-                df = pd.read_excel(file_path)
+            df = pd.read_excel(file_path)
         else:
             raise ValueError("Unsupported file format. Only CSV and Excel (XLSX) files are supported.")
 
         # Create the JSON structure
         json_data = {
-            "projectFileVersion": "2022-05-01",
+            "projectFileVersion": "2022-10-01-preview",
             "stringIndexType": "Utf16CodeUnit",
             "metadata": {
-                "projectKind": "CustomSingleLabelClassification",
-                "storageInputContainerName": cointainer_name,
-                "settings": {},
+                "projectKind": "Conversation",
                 "projectName": project_name,
                 "multilingual": True,
-                "description": "Project-description",
-                "language": language_code
+                "description": "DESCRIPTION",
+                "language": language_code,
+                "settings": {
+                    "confidenceThreshold": 0
+                }
             },
             "assets": {
-                "projectKind": "CustomSingleLabelClassification",
-                "classes": [],
-                "documents": []
+                "projectKind": "Conversation",
+                "intents": [],
+                "entities": [],
+                "utterances": []
             }
         }
 
-        # Add classes from the data
-        classes = set(df[class_column_name])
-        json_data['assets']['classes'] = [{'category': c} for c in classes]
+        # Add intents from the data
+        intents = set(df[class_column_name])
+        json_data['assets']['intents'] = [{'category': i} for i in intents]
 
-        # Add documents from the data
+        # Add entities, if needed
+        # json_data['assets']['entities'] = [...]
+
+        unique_utterances = set()  # Set to store unique utterances
+
+        # Add utterances from the data
         for index, row in df.iterrows():
-            document = {
-                "location": f"row_{index}.txt",
+            utterance = row[text_data_column]
+            intent = row[class_column_name]
+
+            # Skip if utterance is duplicated
+            if utterance in unique_utterances:
+                continue
+
+            utterance_obj = {
+                "text": utterance,
+                "intent": intent,
                 "language": language_code,
                 "dataset": "Train",
-                "class": {"category": row[class_column_name]}
+                "entities": []
             }
-            json_data['assets']['documents'].append(document)
+
+            # Add entities if needed
+            # utterance_obj["entities"].append({
+            #     "category": "{ENTITY1}",
+            #     "offset": 6,
+            #     "length": 4
+            # })
+
+            json_data['assets']['utterances'].append(utterance_obj)
+            unique_utterances.add(utterance)  # Add utterance to set
 
         # Convert the JSON data to a string
         json_string = json.dumps(json_data, indent=4)
 
         # Save the JSON data to a file
-        with open('labelled_training_data.json', 'w') as file:
+        with open('language_understanding.json', 'w') as file:
             file.write(json_string)
-        
+
     except Exception as e:
         print(f"An error occurred: {str(e)}")
+        
+convert_labelled_data_to_json("labelled_training_data.csv", "en-us", "exodus_conversation_json","Customer Feedback", "Categories")
 
 def conversational_language_understanding():
     try:
@@ -169,4 +195,4 @@ def conversational_language_understanding():
     except Exception as e:
         print(f"An error occurred: {str(e)}")
 
-conversational_language_understanding()
+#conversational_language_understanding()
