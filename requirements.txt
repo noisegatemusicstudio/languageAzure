@@ -1,45 +1,33 @@
-aiohttp==3.8.4
-aiosignal==1.3.1
-async-timeout==4.0.2
-attrs==23.1.0
-certifi==2023.5.7
-charset-normalizer==3.1.0
-click==8.1.3
-et-xmlfile==1.1.0
-ffmpeg-python==0.2.0
-filelock==3.12.2
-frozenlist==1.3.3
-future==0.18.3
-idna==3.4
-javalang==0.13.0
-Jinja2==3.1.2
-llvmlite==0.40.1
-MarkupSafe==2.1.3
-more-itertools==9.1.0
-mpmath==1.3.0
-multidict==6.0.4
-networkx==3.1
-numba==0.57.1
-numpy==1.24.3
-openai==0.27.7
-opencv-python-headless==4.8.0.74
-openpyxl==3.1.2
-pandas==2.0.3
-PyAudio==0.2.13
-pydub==0.25.1
-python-dateutil==2.8.2
-pytz==2023.3
-pyzbar==0.1.9
-regex==2023.6.3
-requests==2.31.0
-six==1.16.0
-SpeechRecognition==3.10.0
-sympy==1.12
-tiktoken==0.3.1
-torch==2.0.1
-tqdm==4.65.0
-typing_extensions==4.6.3
-tzdata==2023.3
-urllib3==2.0.2
-whisper==1.1.10
-yarl==1.9.2
+click @ file:///home/conda/feedstock_root/build_artifacts/click_1689751945043/work
+cloudpickle @ file:///home/conda/feedstock_root/build_artifacts/cloudpickle_1674202310934/work
+contourpy @ file:///Users/cbousseau/work/recipes/ci_py311/contourpy_1677925208456/work
+cycler @ file:///home/conda/feedstock_root/build_artifacts/cycler_1635519461629/work
+cytoolz @ file:///Users/cbousseau/work/recipes/ci_py311/cytoolz_1677931761799/work
+dask @ file:///home/conda/feedstock_root/build_artifacts/dask-core_1691196036227/work
+fonttools==4.25.0
+fsspec @ file:///home/conda/feedstock_root/build_artifacts/fsspec_1686342280219/work
+imagecodecs @ file:///Users/cbousseau/work/recipes/ci_py311_2/imagecodecs_1678994839331/work
+imageio @ file:///home/conda/feedstock_root/build_artifacts/imageio_1686552404404/work
+importlib-metadata @ file:///home/conda/feedstock_root/build_artifacts/importlib-metadata_1688754491823/work
+kiwisolver @ file:///Users/cbousseau/work/recipes/ci_py311/kiwisolver_1677925326358/work
+lazy_loader @ file:///home/conda/feedstock_root/build_artifacts/lazy_loader_1679784563552/work
+locket @ file:///home/conda/feedstock_root/build_artifacts/locket_1650660393415/work
+matplotlib @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_05rfi32zzb/croot/matplotlib-suite_1679593473526/work
+munkres==1.1.4
+networkx @ file:///home/conda/feedstock_root/build_artifacts/networkx_1680692919326/work
+numpy @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_a19y8c22jc/croot/numpy_and_numpy_base_1691091616945/work
+packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1681337016113/work
+partd @ file:///home/conda/feedstock_root/build_artifacts/partd_1681246756246/work
+Pillow==9.4.0
+pyparsing @ file:///home/conda/feedstock_root/build_artifacts/pyparsing_1690737849915/work
+python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1626286286081/work
+PyWavelets @ file:///Users/cbousseau/work/recipes/ci_py311/pywavelets_1677934749412/work
+PyYAML @ file:///Users/cbousseau/work/recipes/ci_py311/pyyaml_1677927153992/work
+pyzbar @ file:///home/conda/feedstock_root/build_artifacts/pyzbar_1589477168735/work
+scikit-image @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_12rg0hdzgk/croot/scikit-image_1682528304529/work
+scipy==1.9.3
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+tifffile @ file:///home/conda/feedstock_root/build_artifacts/tifffile_1617956128193/work
+toolz @ file:///home/conda/feedstock_root/build_artifacts/toolz_1657485559105/work
+tornado @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_28d93aezp2/croot/tornado_1690848278715/work
+zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1689374466814/work
