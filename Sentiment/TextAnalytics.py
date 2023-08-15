@@ -1,6 +1,6 @@
 import os
 
-textAnalyticsEndpoint = 'exodus-language.cognitiveservices.azure.com'
+textAnalyticsEndpoint = 'exo-lang.cognitiveservices.azure.com'
 sentimentEndpoint = '/text/analytics/v3.0/sentiment'
 keyPhrasesEndpoint = '/text/analytics/v3.0/keyPhrases'
 textAnalyticsKey = os.getenv('AZURE_LANGUAGE_TOKEN')

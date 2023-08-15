@@ -14,7 +14,16 @@
         "projectKind": "CustomSingleLabelClassification",
         "classes": [
             {
+                "category": "website"
+            },
+            {
+                "category": "others"
+            },
+            {
                 "category": "product"
+            },
+            {
+                "category": "book"
             },
             {
                 "category": "vacation"
@@ -23,22 +32,13 @@
                 "category": "music"
             },
             {
+                "category": "movie"
+            },
+            {
                 "category": "food"
             },
             {
                 "category": "service"
-            },
-            {
-                "category": "website"
-            },
-            {
-                "category": "book"
-            },
-            {
-                "category": "movie"
-            },
-            {
-                "category": "others"
             }
         ],
         "documents": [
