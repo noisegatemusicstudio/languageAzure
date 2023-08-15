@@ -1,14 +1,22 @@
+azure-ai-textanalytics==5.3.0
+azure-common==1.1.28
+azure-core==1.29.1
+certifi==2023.7.22
+charset-normalizer==3.2.0
 click @ file:///home/conda/feedstock_root/build_artifacts/click_1689751945043/work
 cloudpickle @ file:///home/conda/feedstock_root/build_artifacts/cloudpickle_1674202310934/work
 contourpy @ file:///Users/cbousseau/work/recipes/ci_py311/contourpy_1677925208456/work
 cycler @ file:///home/conda/feedstock_root/build_artifacts/cycler_1635519461629/work
 cytoolz @ file:///Users/cbousseau/work/recipes/ci_py311/cytoolz_1677931761799/work
 dask @ file:///home/conda/feedstock_root/build_artifacts/dask-core_1691196036227/work
+et-xmlfile==1.1.0
 fonttools==4.25.0
 fsspec @ file:///home/conda/feedstock_root/build_artifacts/fsspec_1686342280219/work
+idna==3.4
 imagecodecs @ file:///Users/cbousseau/work/recipes/ci_py311_2/imagecodecs_1678994839331/work
 imageio @ file:///home/conda/feedstock_root/build_artifacts/imageio_1686552404404/work
 importlib-metadata @ file:///home/conda/feedstock_root/build_artifacts/importlib-metadata_1688754491823/work
+isodate==0.6.1
 kiwisolver @ file:///Users/cbousseau/work/recipes/ci_py311/kiwisolver_1677925326358/work
 lazy_loader @ file:///home/conda/feedstock_root/build_artifacts/lazy_loader_1679784563552/work
 locket @ file:///home/conda/feedstock_root/build_artifacts/locket_1650660393415/work
@@ -16,18 +24,25 @@ matplotlib @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs
 munkres==1.1.4
 networkx @ file:///home/conda/feedstock_root/build_artifacts/networkx_1680692919326/work
 numpy @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_a19y8c22jc/croot/numpy_and_numpy_base_1691091616945/work
+openpyxl==3.1.2
 packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1681337016113/work
+pandas==2.0.3
 partd @ file:///home/conda/feedstock_root/build_artifacts/partd_1681246756246/work
 Pillow==9.4.0
 pyparsing @ file:///home/conda/feedstock_root/build_artifacts/pyparsing_1690737849915/work
 python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1626286286081/work
+pytz==2023.3
 PyWavelets @ file:///Users/cbousseau/work/recipes/ci_py311/pywavelets_1677934749412/work
 PyYAML @ file:///Users/cbousseau/work/recipes/ci_py311/pyyaml_1677927153992/work
 pyzbar @ file:///home/conda/feedstock_root/build_artifacts/pyzbar_1589477168735/work
+requests==2.31.0
 scikit-image @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_12rg0hdzgk/croot/scikit-image_1682528304529/work
 scipy==1.9.3
 six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
 tifffile @ file:///home/conda/feedstock_root/build_artifacts/tifffile_1617956128193/work
 toolz @ file:///home/conda/feedstock_root/build_artifacts/toolz_1657485559105/work
 tornado @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_28d93aezp2/croot/tornado_1690848278715/work
+typing_extensions==4.7.1
+tzdata==2023.3
+urllib3==2.0.4
 zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1689374466814/work

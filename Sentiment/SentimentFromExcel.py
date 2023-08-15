@@ -41,7 +41,7 @@ def close_connection(conn):
     conn.close()
 
 # Load the Excel file
-df = pd.read_excel('Feedback.xlsx')
+df = pd.read_excel('inputFiles/Feedback.xlsx')
 
 # Initialize an empty list to store the results
 sentiments = []
@@ -89,5 +89,5 @@ df['Sentiment'] = sentiments
 df['Key Phrases'] = key_phrases
 
 # Save the DataFrame to a new Excel file
-with pd.ExcelWriter('Feedback_Analyzed.xlsx', engine='openpyxl') as writer:
+with pd.ExcelWriter('outputFiles/Feedback_Analyzed.xlsx', engine='openpyxl') as writer:
     df.to_excel(writer, index=False)
