@@ -4,7 +4,7 @@ import json
 from openpyxl import load_workbook
 from azure.core.credentials import AzureKeyCredential
 from azure.ai.textanalytics import TextAnalyticsClient
-        
+             
 def extract_rows_to_text_files(file_path):
     try:
         # Create a new folder called "documents"
