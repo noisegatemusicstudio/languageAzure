@@ -51,7 +51,7 @@ def convert_labelled_data_to_utterance_file(file_path, language_code):
         json_data = json.dumps(data, indent=4)
 
         # Print or save the JSON data
-        with open('utterance_file.json', 'w') as outfile:
+        with open('outputFiles/utterance_file.json', 'w') as outfile:
             outfile.write(json_data)
     except Exception as e:
         print(f"An error occurred: {str(e)}")
@@ -130,24 +130,30 @@ def convert_labelled_data_to_json(file_path, language_code, project_name, text_d
         json_string = json.dumps(json_data, indent=4)
 
         # Save the JSON data to a file
-        with open('language_understanding.json', 'w') as file:
+        with open('outputFiles/language_understanding.json', 'w') as file:
             file.write(json_string)
 
     except Exception as e:
         print(f"An error occurred: {str(e)}")
         
-convert_labelled_data_to_json("labelled_training_data.csv", "en-us", "exodus_conversation_json","Customer Feedback", "Categories")
+#convert_labelled_data_to_json("labelled_training_data.csv", "en-us", "exodus_conversation_json","Customer Feedback", "Categories")
 
-def conversational_language_understanding():
+def conversational_language_understanding(file_path, project_name, deployment_name):
     try:
         # get secrets
         clu_endpoint = 'https://exoduslanguage.cognitiveservices.azure.com/'
         clu_key = os.environ.get("AZURE_LANGUAGE_KEY")
-        project_name = "exodus_language_understanding"
-        deployment_name = "exodus_conversational"
+        project_name = project_name
+        deployment_name = deployment_name
 
-        # Read the Excel file
-        df = pd.read_excel('Segmentation.xlsx')
+        # Read CSV file or Excel file and convert it to a Pandas DataFrame
+        if file_path.endswith('.csv'):  # Check if the file has a CSV extension
+            df = pd.read_csv(file_path)
+        elif file_path.endswith('.xlsx'):  # Check if the file has an XLSX extension
+            df = pd.read_excel(file_path)
+        else:
+            raise ValueError("Unsupported file format. Only CSV and Excel (XLSX) files are supported.")
+        
         categories = []
 
         # analyze queries
@@ -190,9 +196,9 @@ def conversational_language_understanding():
             df["Categories"] = categories    
             
             # Save the analyzed data to a new Excel file
-            with pd.ExcelWriter('Segmentation_conversational_Analyzed.xlsx', engine='openpyxl') as writer:
+            with pd.ExcelWriter('outputFiles/Segmentation_conversational_Analyzed.xlsx', engine='openpyxl') as writer:
                 df.to_excel(writer, index=False)
     except Exception as e:
         print(f"An error occurred: {str(e)}")
 
-#conversational_language_understanding()
+conversational_language_understanding("inputFiles/Segmentation.xlsx", "exodus_language_understanding", "exodus_conversational")
