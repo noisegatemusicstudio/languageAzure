@@ -3,7 +3,7 @@ from openpyxl import load_workbook
 import urllib.parse, http.client, urllib.request, urllib.error, json
 import os
 
-textAnalyticsEndpoint = 'exodus-language.cognitiveservices.azure.com'
+textAnalyticsEndpoint = 'exo-lang.cognitiveservices.azure.com'
 sentimentEndpoint = '/text/analytics/v3.0/sentiment'
 languageEndpoint = '/text/analytics/v3.0/languages'
 keyPhrasesEndpoint = '/text/analytics/v3.0/keyPhrases'
