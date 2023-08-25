@@ -40,7 +40,10 @@ while continue_scanning:
         print("Recognized: {}".format(recognized_text))
 
         # Check if the recognized text contains the stop phrase
-        if "susan, stop recording." or "susan, stopped recording" in recognized_text:
+        if "susan, stop recording" in recognized_text:
+            continue_scanning = False
+            print("Scanning stopped.")
+        elif "susan, stopped recording" in recognized_text:
             continue_scanning = False
             print("Scanning stopped.")
         else:
