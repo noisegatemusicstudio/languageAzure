@@ -29,13 +29,9 @@ def extract_rows_to_text_files(file_path):
             print(f"Created {file_name}")
     except Exception as e:
         print(f"An error occurred: {str(e)}")
-        
-
-# Provide the path to your Excel file
-csv_file_path = "labelled_training_data.csv"
 
 # Call the function to extract rows to text files
-#extract_rows_to_text_files(csv_file_path)
+#extract_rows_to_text_files("inputFiles/labelled_training_data.csv")
 
 def convert_labelled_data_to_json(file_path, language_code, cointainer_name, project_name, class_column_name):
     try:
@@ -91,7 +87,7 @@ def convert_labelled_data_to_json(file_path, language_code, cointainer_name, pro
     except Exception as e:
         print(f"An error occurred: {str(e)}")
         
-#convert_labelled_data_to_json("labelled_training_data.csv", "en-us", "exodus", "exodusSingle_json_label", "Categories")
+#convert_labelled_data_to_json("inputFiles/labelled_training_data.csv", "en-us", "exodus", "exodusSingle_json_label", "Categories")
 
 def custom_text_classification(file_path, project_name, deployment_name):
     try:
