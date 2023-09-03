@@ -6,7 +6,7 @@ from openpyxl import load_workbook
 from azure.core.credentials import AzureKeyCredential
 from azure.ai.language.conversations import ConversationAnalysisClient
 
-def convert_labelled_data_to_utterance_file(file_path, language_code):
+def convert_labelled_data_to_utterance_file(file_path, language_code, text_column_name, class_column_name):
     try:
         # Read CSV file or Excel file and convert it to a Pandas DataFrame
         if file_path.endswith('.csv'):  # Check if the file has a CSV extension
@@ -21,8 +21,8 @@ def convert_labelled_data_to_utterance_file(file_path, language_code):
         unique_utterances = set()  # Set to store unique utterances
         
         for index, row in df.iterrows():
-            utterance = row['Customer Feedback']
-            intent = row['Categories']
+            utterance = row[text_column_name]
+            intent = row[class_column_name]
             
             # Skip if utterance is duplicated
             if utterance in unique_utterances:
@@ -56,9 +56,9 @@ def convert_labelled_data_to_utterance_file(file_path, language_code):
     except Exception as e:
         print(f"An error occurred: {str(e)}")
         
-#convert_labelled_data_to_utterance_file("labelled_training_data.csv", "en-us")
+#convert_labelled_data_to_utterance_file("inputFiles/labelled_training_data.csv", "en-us", "Customer Feedback", "Categories")
 
-def convert_labelled_data_to_json(file_path, language_code, project_name, text_data_column, class_column_name):
+def convert_labelled_data_to_json(file_path, language_code, project_name, text_column_name, class_column_name):
     try:
         # Read CSV file or Excel file and convert it to a Pandas DataFrame
         if file_path.endswith('.csv'):  # Check if the file has a CSV extension
@@ -101,7 +101,7 @@ def convert_labelled_data_to_json(file_path, language_code, project_name, text_d
 
         # Add utterances from the data
         for index, row in df.iterrows():
-            utterance = row[text_data_column]
+            utterance = row[text_column_name]
             intent = row[class_column_name]
 
             # Skip if utterance is duplicated
@@ -136,7 +136,7 @@ def convert_labelled_data_to_json(file_path, language_code, project_name, text_d
     except Exception as e:
         print(f"An error occurred: {str(e)}")
         
-#convert_labelled_data_to_json("labelled_training_data.csv", "en-us", "exodus_conversation_json","Customer Feedback", "Categories")
+#convert_labelled_data_to_json("inputFiles/labelled_training_data.csv", "en-us", "exodus_conversation_json","Customer Feedback", "Categories")
 
 def conversational_language_understanding(file_path, project_name, deployment_name):
     try:
