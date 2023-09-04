@@ -3,6 +3,9 @@
 ## Pre-requisites
 install Python 3.x
 
+pip install azure-ai-textanalytics azure-ai-translation
+
+
 ## Installation
 
 Clone the repository:
