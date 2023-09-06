@@ -9,7 +9,7 @@ textAnalyticsEndpoint = 'langservicenew.cognitiveservices.azure.com'
 sentimentEndpoint = '/text/analytics/v3.0/sentiment'
 languageEndpoint = '/text/analytics/v3.0/languages'
 keyPhrasesEndpoint = '/text/analytics/v3.0/keyPhrases'
-textAnalyticsKey = '691848d064494321bc01653e4e91bfc6' # os.getenv('AZURE_LANGUAGE_TOKEN')
+textAnalyticsKey = os.getenv('AZURE_LANGUAGE_TOKEN')
 
 headers = {
     'Content-Type' : 'application/json',
