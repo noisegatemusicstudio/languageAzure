@@ -3,7 +3,9 @@ from openpyxl import load_workbook
 import urllib.parse, http.client, urllib.request, urllib.error, json
 import os
 
-textAnalyticsEndpoint = 'exo-lang.cognitiveservices.azure.com'
+import translate
+
+textAnalyticsEndpoint = 'langservicenew.cognitiveservices.azure.com'
 sentimentEndpoint = '/text/analytics/v3.0/sentiment'
 languageEndpoint = '/text/analytics/v3.0/languages'
 keyPhrasesEndpoint = '/text/analytics/v3.0/keyPhrases'
@@ -44,49 +46,115 @@ def close_connection(conn):
 df = pd.read_excel('inputFiles/Feedback.xlsx')
 
 # Initialize an empty list to store the results
-sentiments = []
-key_phrases = []
+sentimentsPos = []
+sentimentsNeg = []
+translationPos = []
+translationNeg = []
+key_phrases_pos = []
+key_phrases_neg = []
 
 # Iterate over the rows in the DataFrame
 for index, row in df.iterrows():
     # Update the body with the current row's text
-    body = {
+    bodyPos = {
         'documents': [
             {
                 'id': str(index),
-                'text': row['Text']  # replace 'your_column_name' with the name of your column
+                'text': row['Positive review']  # replace 'your_column_name' with the name of your column
             }
         ]
     }
 
+        # Update the body with the current row's text
+    bodyNeg = {
+        'documents': [
+            {
+                'id': str(index),
+                'text': row['Negative review']  # replace 'your_column_name' with the name of your column
+            }
+        ]
+    }
+
+    # Below block for positive review sentiment
     try:
         conn = create_connection(textAnalyticsEndpoint)
-        response = send_request(conn, sentimentEndpoint, params, body, headers)
+        response = send_request(conn, sentimentEndpoint, params, bodyPos, headers)
         data = get_json_data(response)
         print(f"Sentiment response for document {index}: {data}")  # print the response
         sentiment = get_sentiment(data)
         print(f"Sentiment for document {index}: {sentiment}")  # print the sentiment
-        sentiments.append(sentiment)
+        sentimentsPos.append(sentiment)
         close_connection(conn)
     except Exception as ex:
         print(ex)
-        sentiments.append('error')  # append a default value in case of an exception
+        sentimentsPos.append('error')  # append a default value in case of an exception
 
+    # Below block for negative review sentiment
     try:
         conn = create_connection(textAnalyticsEndpoint)
-        response = send_request(conn, keyPhrasesEndpoint, params, body, headers)
+        response = send_request(conn, sentimentEndpoint, params, bodyNeg, headers)
+        data = get_json_data(response)
+        print(f"Sentiment response for document {index}: {data}")  # print the response
+        sentiment = get_sentiment(data)
+        print(f"Sentiment for document {index}: {sentiment}")  # print the sentiment
+        sentimentsNeg.append(sentiment)
+        close_connection(conn)
+    except Exception as ex:
+        print(ex)
+        sentimentsNeg.append('error')  # append a default value in case of an exception
+
+    # Below block for positive review key phrase
+    try:
+        conn = create_connection(textAnalyticsEndpoint)
+        response = send_request(conn, keyPhrasesEndpoint, params, bodyPos, headers)
         data = get_json_data(response)
         print(f"Key phrases response for document {index}: {data}")  # print the response
         phrases = data['documents'][0]['keyPhrases']
-        key_phrases.append(', '.join(phrases))
+        key_phrases_pos.append(', '.join(phrases))
         close_connection(conn)
     except Exception as ex:
         print(ex)
-        key_phrases.append('error')  # append a default value in case of an exception
+        key_phrases_pos.append('error')  # append a default value in case of an exception
+
+    # Below block for negative review key phrase
+    try:
+        conn = create_connection(textAnalyticsEndpoint)
+        response = send_request(conn, keyPhrasesEndpoint, params, bodyNeg, headers)
+        data = get_json_data(response)
+        print(f"Key phrases response for document {index}: {data}")  # print the response
+        phrases = data['documents'][0]['keyPhrases']
+        key_phrases_neg.append(', '.join(phrases))
+        close_connection(conn)
+    except Exception as ex:
+        print(ex)
+        key_phrases_neg.append('error')  # append a default value in case of an exception
+
+    # Below block for positive review translation
+    try:
+        body = [{'text': bodyPos['documents'][0]['text']}]
+        translation = translate(body)
+        translationPos.append(translation)
+    except Exception as ex:
+        print(ex)
+        translationPos.append('error')  # append a default value in case of an exception
+
+    # Below block for negative review translation
+    try:
+        body = [{'text': bodyNeg['documents'][0]['text']}]
+        translation = translate(body)
+        translationNeg.append(translation)
+    except Exception as ex:
+        print(ex)
+        translationNeg.append('error')  # append a default value in case of an exception
 
 # Add the results to the DataFrame
-df['Sentiment'] = sentiments
-df['Key Phrases'] = key_phrases
+df['Positive Review Sentiment'] = sentimentsPos
+df['Negative Review Sentiment'] = sentimentsNeg
+df['Key Phrases Positive'] = key_phrases_pos
+df['Key Phrases Negative'] = key_phrases_neg
+
+df['Positive Review Translation'] = translationPos
+df['Negative Review Translation'] = translationNeg
 
 # Save the DataFrame to a new Excel file
 with pd.ExcelWriter('outputFiles/Feedback_Analyzed.xlsx', engine='openpyxl') as writer:

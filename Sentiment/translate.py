@@ -29,13 +29,12 @@ def create_connection(textTranslationEndpoint):
     return http.client.HTTPSConnection(textTranslationEndpoint)
 
 def send_request(conn, endPoint, params, body, headers):
-    print(json.dumps(body))
     conn.request('POST', endPoint + params, json.dumps(body), headers)
     return conn.getresponse()
 
 def get_json_data(response):
     response_data = response.read().decode('UTF-8')
-    print("Response:", response_data)  # Print the raw response
+    #print("Response:", response_data)  # Print the raw response
     return json.loads(response_data)
 
 def print_translation(data):
@@ -58,4 +57,7 @@ def translate(body):
         close_connection(conn)
     except Exception as ex:
         print(ex)
+    finally:
+        return (data[0]['translations'][0]['text'])
+
 

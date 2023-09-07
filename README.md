@@ -1,5 +1,3 @@
-# qrScanner
-
 ## Pre-requisites
 install Python 3.x
 
@@ -13,6 +11,13 @@ git clone https://github.com/yourusername/yourproject.git
 cd yourproject
 
 pip install -r requirements.txt
+
+## For module import (to leverage config manager)
+pip install -e .
+
+## Update cntlm configuration
+Go to cntlm.conf file and update NoProxy as below
+NoProxy <existing_values>, *.openai.azure.com, *.cognitiveservices.azure.com
 
 Run the application:
 python myQRScanner.py
