@@ -5,6 +5,7 @@ from openpyxl import load_workbook
 from azure.core.credentials import AzureKeyCredential
 from azure.ai.textanalytics import TextAnalyticsClient
 
+
 # Load the Excel file
 df = pd.read_excel('inputFiles/Feedback.xlsx')
         
@@ -92,21 +93,24 @@ def convert_labelled_data_to_json(file_path, language_code, cointainer_name, pro
         
 #convert_labelled_data_to_json("inputFiles/nodupl.csv", "en-us", "classificationcontainer", "langStudioProject", "Categories")
 
+categories = []
+
 def custom_text_classification(file_path, project_name, deployment_name):
+
     try:
         # Azure Cognitive Services endpoint and key
         endpoint = 'https://langservicenew.cognitiveservices.azure.com/'
         key = os.environ.get("AZURE_LANGUAGE_KEY")
 
         # Read CSV file or Excel file and convert it to a Pandas DataFrame
-        if file_path.endswith('.csv'):  # Check if the file has a CSV extension
-            data = pd.read_csv(file_path)
-        elif file_path.endswith('.xlsx'):  # Check if the file has an XLSX extension
-            data = pd.read_excel(file_path)
-        else:
-            raise ValueError("Unsupported file format. Only CSV and Excel (XLSX) files are supported.")
+        #if file_path.endswith('.csv'):  # Check if the file has a CSV extension
+            #data = pd.read_csv(file_path)
+        #elif file_path.endswith('.xlsx'):  # Check if the file has an XLSX extension
+            #data = pd.read_excel(file_path)
+        #else:
+            #raise ValueError("Unsupported file format. Only CSV and Excel (XLSX) files are supported.")
 
-        document = (data["Positive comment"]+data['Negative comment']).tolist()
+        document = file_path
         
         # Initialize Text Analytics client
         text_analytics_client = TextAnalyticsClient(
@@ -114,43 +118,55 @@ def custom_text_classification(file_path, project_name, deployment_name):
             credential=AzureKeyCredential(key),
         )
 
-        batch_size = 25
+        batch_size = 10
         num_batches = (len(document) - 1) # batch_size + 1
-        categories = []
+        print(num_batches)
 
         for i in range(num_batches):
             start_index = i * batch_size
             end_index = min((i + 1) * batch_size, len(document))
+
             if end_index < start_index:
                 break
     
-            print(start_index)
-            print(end_index)
             batch_document = document[start_index:end_index]
+
+            #print(batch_document)
+
+            print('avirag1')
 
             # Perform single-label classification on the batch
             poller = text_analytics_client.begin_multi_label_classify(
                 batch_document, project_name=project_name, deployment_name=deployment_name
             )
 
+            print('avirag2')
+
             # Get classification results for each document in the batch
             document_results = poller.result()
 
+            print('avirag3')
+            
             for doc, classification_result in zip(document, document_results):
                 if classification_result.kind == "CustomDocumentClassification":
                     classifications = classification_result.classifications
-                    print(f"\nThe review '{doc}' was classified as the following category:\n")
                     category = []
+                    print(f"\nThe review '{doc}' was classified as the following category:\n")
                     for classification in classifications:
                         print("'{}' with confidence score {}.".format(
                             classification.category, classification.confidence_score
                         ))
-                        category.append(classification.category)
-                    categories.append(category)    
+                        category.append(str(classification.category))
+                    if(len(category) > 0):
+                        categories.append(' '.join(category))
+                    else:
+                        categories.append('null')
+                    
                 elif classification_result.is_error is True:
                     print("The review '{}' has an error with code '{}' and message '{}'".format(
                         doc, classification_result.error.code, classification_result.error.message
                     ))
+                    categories.append('null')
                 
                 # Print the classification result
                 print(classification_result.classifications)
@@ -159,13 +175,15 @@ def custom_text_classification(file_path, project_name, deployment_name):
 
         # Add the categories to the data
         #data["Categories"] = categories
-        df['Categories'] = categories
+        #df['Categories'] = categories
 
         # Save the DataFrame to a new Excel file
-        with pd.ExcelWriter('outputFiles/Segmentation_Analyzed.xlsx', engine='openpyxl') as writer:
-            df.to_excel(writer, index=False)
+        #with pd.ExcelWriter('outputFiles/Feedback_Analyzed.xlsx', engine='openpyxl') as writer:
+            #df.to_excel(writer, index=False)
 
     except Exception as e:
         print(f"An error occurred: {str(e)}")
+    finally:
+        return categories
             
-custom_text_classification("inputFiles/Feedback.xlsx", 'langProject', 'classDeployment')
+#custom_text_classification(df['Negative comment'], 'langProject', 'classDeployment')

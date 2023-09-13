@@ -22,7 +22,7 @@ body = [{'text': texts[0]}]
 
 params = urllib.parse.urlencode({
     'api-version': '3.0',
-    'to': 'fr'
+    'to': 'en'
 })
 
 def create_connection(textTranslationEndpoint):

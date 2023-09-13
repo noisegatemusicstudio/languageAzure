@@ -22,7 +22,7 @@ body = [{'text': texts[0]}]
 
 params = urllib.parse.urlencode({
     'api-version': '3.0',
-    'to': 'fr'
+    'to': 'en'
 })
 
 def create_connection(textTranslationEndpoint):
@@ -49,13 +49,12 @@ def close_connection(conn):
     conn.close()
 
 
-def translate(body):
-    try:
-        conn = create_connection(textTranslationEndpoint)
-        response = send_request(conn, translationEndpoint, params, body, headers)
-        data = get_json_data(response)
-        print_translation(data['documents'])
-        close_connection(conn)
-    except Exception as ex:
-        print(ex)
+try:
+    conn = create_connection(textTranslationEndpoint)
+    response = send_request(conn, translationEndpoint, params, body, headers)
+    data = get_json_data(response)
+    print_translation(data['documents'])
+    close_connection(conn)
+except Exception as ex:
+    print(ex)
 
