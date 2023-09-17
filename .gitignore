@@ -137,4 +137,5 @@ dmypy.json
 
 # Idea settings
 .idea/
+.idea/workspace.xml
 .DS_Store
