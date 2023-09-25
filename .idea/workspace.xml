@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63340f2f-e885-49ee-89c9-23e365c65b45" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/adobe_express.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myQRScanner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myQRScanner.spec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/qrScanner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/qrScanner2.spec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Feedback_Analyzed.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Feedback_Analyzed.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/~$Feedback_Analyzed.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpeechToText/stt.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechToText/stt.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +22,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Rebasing main",
-    "last_opened_file_path": "/Users/mishrarahul/VisualStudioProjects/LanguageAzure",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/mishrarahul/VisualStudioProjects/languageAzure",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "com.diffblue.cover.intellij"
   }
 }]]></component>

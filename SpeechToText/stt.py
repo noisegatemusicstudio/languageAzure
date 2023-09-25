@@ -13,7 +13,7 @@ speech_recognizer = speechsdk.SpeechRecognizer(speech_config=speech_config)
 
 # Set up Azure Text Analytics API credentials
 text_analytics_key = os.environ.get("AZURE_LANGUAGE_KEY")
-text_analytics_endpoint = 'https://exoduslanguage.cognitiveservices.azure.com/'
+text_analytics_endpoint = 'https://langservicenew.cognitiveservices.azure.com/'
 text_analytics_client = TextAnalyticsClient(text_analytics_endpoint, AzureKeyCredential(text_analytics_key))
 
 print("Say something...")
