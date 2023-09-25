@@ -1,0 +1,2 @@
+Review: Scan ID always fail, very stupid scan setting
+Categories: Device Support

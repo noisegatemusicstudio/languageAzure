@@ -96,7 +96,7 @@ def custom_text_classification(file_path, project_name, deployment_name):
     try:
         # Azure Cognitive Services endpoint and key
         endpoint = 'https://langservicenew.cognitiveservices.azure.com/'
-        key = os.environ.get("AZURE_LANGUAGE_KEY")
+        key = '691848d064494321bc01653e4e91bfc6' #os.environ.get("AZURE_LANGUAGE_KEY")
 
         # Read CSV file or Excel file and convert it to a Pandas DataFrame
         if file_path.endswith('.csv'):  # Check if the file has a CSV extension

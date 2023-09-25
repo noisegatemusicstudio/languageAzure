@@ -8,7 +8,7 @@ from azure.ai.textanalytics import TextAnalyticsClient
 
 # Load the Excel file
 df = pd.read_excel('inputFiles/Feedback.xlsx')
-        
+
 def extract_rows_to_text_files(file_path):
     try:
         # Create a new folder called "documents"
@@ -35,7 +35,7 @@ def extract_rows_to_text_files(file_path):
         print(f"An error occurred: {str(e)}")
 
 # Call the function to extract rows to text files
-#extract_rows_to_text_files("inputFiles/nodupl.csv")
+#extract_rows_to_text_files("inputFiles/labelled_training_data.csv")
 
 def convert_labelled_data_to_json(file_path, language_code, cointainer_name, project_name, class_column_name):
     try:
@@ -91,7 +91,7 @@ def convert_labelled_data_to_json(file_path, language_code, cointainer_name, pro
     except Exception as e:
         print(f"An error occurred: {str(e)}")
         
-#convert_labelled_data_to_json("inputFiles/nodupl.csv", "en-us", "classificationcontainer", "langStudioProject", "Categories")
+convert_labelled_data_to_json("inputFiles/labelled_training_data.csv", "en-us", "classificationcontainer", "langProject", "Categories")
 
 categories = []
 
@@ -100,7 +100,7 @@ def custom_text_classification(file_path, project_name, deployment_name):
     try:
         # Azure Cognitive Services endpoint and key
         endpoint = 'https://langservicenew.cognitiveservices.azure.com/'
-        key = os.environ.get("AZURE_LANGUAGE_KEY")
+        key = '691848d064494321bc01653e4e91bfc6' #os.environ.get("AZURE_LANGUAGE_KEY")
 
         # Read CSV file or Excel file and convert it to a Pandas DataFrame
         #if file_path.endswith('.csv'):  # Check if the file has a CSV extension

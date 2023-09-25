@@ -1,0 +1,2 @@
+Review: Unable to add credit card, after entered otp from bank, verify button not responding. Exited app and tried again, this time app hanged after entered card number.
+Categories: Transaction limit

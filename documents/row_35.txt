@@ -1,0 +1,2 @@
+Review: Can never add a credit card of my choice. When the card asked to choose from sending OTP by sms or email, the screen just freezed. Repeated N times still unsuccessful to add the card.
+Categories: Bug

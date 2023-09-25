@@ -3,9 +3,9 @@ import http.client
 import urllib.parse
 import json
 
-textTranslationEndpoint = 'api.cognitive.microsofttranslator.com'
+textTranslationEndpoint = 'https://api.cognitive.microsofttranslator.com/'
 translationEndpoint = '/translate?'
-translateKey = os.getenv('AZURE_TRANSLATE_TOKEN')
+translateKey = '0065c5e081604333955f7201afde95fa' # os.getenv('AZURE_TRANSLATE_TOKEN')
 
 headers = {
     'Ocp-Apim-Subscription-Key': translateKey,

@@ -1,128 +1,101 @@
-Customer Feedback,Categories
-I love this product!,product
-The service was terrible.,service
-This movie is amazing!,movie
-I'm so disappointed with their customer support.,service
-Just had the best meal of my life!,food
-The quality of this product is subpar.,product
-I can't stop listening to this song. It's incredible!,music
-Their website is so user-friendly. Love it!,website
-I loved the movie! It was fantastic!,movie
-The customer service was terrible.,service
-This book made me feel inspired. Highly recommended!,book
-I'm extremely disappointed with their product quality.,product
-Just had the most amazing vacation! I can't wait to go back.,vacation
-The food at this restaurant was awful. Never going back again!,food
-I can't stop listening to this song. It's my new favorite!,music
-Their website is so confusing and poorly designed.,website
-I had an incredible experience at the theme park. So much fun!,vacation
-The product arrived damaged. Very disappointed.,product
-The concert was absolutely breathtaking. Best performance ever!,music
-I had a terrible experience with their customer support.,service
-This movie is a masterpiece! I was blown away.,movie
-The customer service at this store is top-notch.,service
-I'm disappointed with the ending of this book. It fell flat.,book
-The product I received was damaged. Unacceptable.,product
-Just had the worst flight experience. Delayed and rude staff.,vacation
-The hotel stay was absolutely amazing! Luxury at its finest.,vacation
-The food at this restaurant was outstanding. Highly recommended!,food
-This playlist is my go-to for workouts. Energizing and motivating!,music
-I had a frustrating experience navigating through their website.,website
-The roller coaster ride was thrilling! Heart-pounding excitement!,vacation
-The product I ordered never arrived. Terrible service.,product
-I can't get enough of this band. Their music is incredible!,music
-I had a great chat with their customer support. Helpful and friendly.,service
-This restaurant has the most delicious food. I can't wait to go back!,food
-The product I purchased broke within a week. Poor quality.,product
-This book is thought-provoking and beautifully written. Highly recommended!,book
-The customer service at this store is exceptional. They went above and beyond.,service
-I had a terrible experience with their technical support. No resolution.,service
-The live concert was electrifying! The band's energy was contagious.,music
-I'm disappointed with the food at this restaurant. It was tasteless.,food
-This song always puts me in a good mood. It's my go-to feel-good track!,music
-The website is slow and unresponsive. Difficult to navigate.,website
-The roller coaster ride was exhilarating! Pure adrenaline rush!,vacation
-The product I ordered arrived damaged. Very disappointed with the packaging.,product
-I'm captivated by this band's unique sound. They're a breath of fresh air!,music
-The customer support was quick to respond and resolved my issue. Impressed!,service
-This restaurant has the best food. I highly recommend it!,food
-The plot of this movie is confusing and hard to follow.,movie
-I'm addicted to this game. It's so much fun!,others
-The customer service at this hotel was terrible. Avoid at all costs.,service
-This book bored me to tears. I couldn't finish it.,book
-I'm impressed with the sound quality of these headphones. Excellent!,product
-The website design is sleek and user-friendly. Easy to navigate.,website
-I had a terrible experience with their delivery service. Late and unprofessional.,service
-The concert was mind-blowing! The band knows how to put on a show.,music
-I'm extremely disappointed with the customer support. No resolution.,service
-The hotel staff were rude and unprofessional. Terrible customer service.,service
-The food at this restaurant was mediocre. Nothing special.,food
-This song always puts me in a nostalgic mood. It reminds me of good times.,music
-The website loading speed is frustratingly slow. Needs improvement.,website
-The food at this cafe exceeded my expectations. Absolutely delicious!,food
-I'm disappointed with the ending of this TV show. It left too many unanswered questions.,others
-This album is a masterpiece. Every song is a work of art!,music
-The website layout is cluttered and confusing. Difficult to find information.,website
-The roller coaster at this theme park is a thrilling experience. A must-try!,vacation
-The product I ordered never arrived. Poor customer service.,service
-I'm in awe of this artist's talent. Their paintings are breathtaking!,others
-The food at this restaurant was disappointing. Not worth the price.,food
-This playlist is perfect for relaxation. Soothing and calming!,music
-The website navigation is smooth and intuitive. I found what I needed quickly.,website
-The ride on this cruise ship was an unforgettable experience. I loved every moment!,vacation
-The product I received was of poor quality. It broke after a few uses.,product
-This book kept me hooked from start to finish. A captivating read!,book
-The customer service at this store is outstanding. They truly care about their customers.,service
-I had a frustrating experience with their technical support. No resolution provided.,service
-The hotel staff were rude and unprofessional. Terrible customer service.,service
-The food at this restaurant was mediocre. Nothing special.,food
-This song always puts me in a nostalgic mood. It reminds me of good times.,music
-The website loading speed is frustratingly slow. Needs improvement.,website
-I love this product!,product
-The service was terrible.,service
-This movie is amazing!,movie
-I'm so disappointed with their customer support.,service
-Just had the best meal of my life!,food
-The quality of this product is subpar.,product
-I can't stop listening to this song. It's incredible!,music
-Their website is so user-friendly. Love it!,website
-I loved the movie! It was fantastic!,movie
-The customer service was terrible.,service
-This book made me feel inspired. Highly recommended!,book
-I'm extremely disappointed with their product quality.,product
-Just had the most amazing vacation! I can't wait to go back.,vacation
-The food at this restaurant was awful. Never going back again!,food
-I can't stop listening to this song. It's my new favorite!,music
-Their website is so confusing and poorly designed.,website
-I had an incredible experience at the theme park. So much fun!,vacation
-This product really suits my needs.,product
-I bought a television last week and the quality is great.,product
-"I like reading book, especially about superhero.",book
-I learn a lot from the book.,book
-"I like reading, but not I don't have much time to read.",book
-"When I am reading book, I feel really relax.",book
-"Yes, you are right, reading book make me feel happier.",book
-"I don't like reading book, it make me feel tired.",book
-"I hate reading book, especially those about history.",book
-It is so boring reading.,book
-I don't buy book. I read at the book shop.,book
-I am going to Taiwan tonight.,vacation
-I will definitely have fun and enjoy my holiday.,vacation
-The trip to Hong Kong is bad. Too crowded.,vacation
-I like eating pork. It is delicious.,food
-My mum cook really good.,food
-The food here is not bad.,food
-This website takes my phone too long to load.,website
-The layout of this website is bad. It makes me feel tired.,website
-I like the colour of this website.,website
-This website is amazing. It allows me to search for anything.,website
-This movie is so boring.,movie
-This movie is hard to understand.,movie
-This movie is good to watch.,movie
-This movie is about superhero.,movie
-"Wow, this movie is amazing.",movie
-It wastes me 2 hours to watch it.,movie
-This movie is not bad but just doesn't worth it.,movie
-It is the best movie that I have watched.,movie
-It is the worst movie that I have watched.,movie
-This movie is fair.,movie
+Review,Categories
+"Have used over an hour can't scan the HKID, so hard to make each side clear, not user friendly! Still can't get it work!",Scanning HKID
+Can't use selfie to verify identity. Please fix the app,Biometric
+"A financial application with appalling quality. Got stuck at face verification and can't get my money back from the app. Recommend everyone to withdraw or sent all money out, then stop using this rubbish system.",Payment Experience
+"If have had zero rating, definitely zero star. Impossible successfully to scan hkid. Worst ever app I have experienced.",Scanning HKID
+Convenient and secure,Good Experience
+"Low quality, poorly tested app. App wanted me to make clown faces one day and wouldn't let me access my account. Contacted support who said I needed to scan my ID card again. However the app has failed to recognise my ID the hundred or so times I've tried to scan it. The image on screen while attempting to scan is blurry and so out of focus that even I can hardly recognise it's an ID card, yet the image from the camera app is crystal clear. I seriously think they're using the camera preview API.",UX UI
+Extremely poor and disappointing of customer service,Customer Service
+poor design,Poor Design
+"Forces you to update app whenever you are in a hurry to pay, 6uo",Update
+This is the most difficult app I have ever come across. The scanning of the HKID and the scanning of the face can never be successful. I would love to see the developer of this app to operate it in front of me.,Scanning HKID
+Worst financial app doesn't seem they care to fix it.,Bug
+Very difficult to scan the ID card,Device Support
+"My trust in PayMe has serious issues. Convenience stores, McDonald's, KFC, and others often claim to deduct $3 from PayMe, but every time I pay (meeting the minimum spend), I never receive any cashback. I won't use PayMe for payments anymore in the future!!",Payment Experience
+"Stay away from this garbage, after several transaction failure messages it charged double for several transactions and costumer service won't want to discuss refunding all the double charges.",Bug
+Doesn't even get past the first screen on my phone (or any phone that's not running stock Android),Device Support
+Terrible experience in new Samsung galaxy S20 Ultra phone. Face scanning keeps failing hence I am unable to access my money. Do not recommend,Biometric
+"do not use this app, hkid scanner and face reader never works, full of bugs, cs number non existant cant call nobody for help. avoid!",Bug
+Good,Good Experience
+good to use,Good Experience
+"Scan ID always fail, very stupid scan setting",Device Support
+Absolutely awful hkif detention. They need better detection,Safety and Security
+quality service & prompt action good & thanks,Good experience
+Trying to transfer funds for 4 months now with no joy,Payment experience
+Fast and good,Good experience
+"Sorry, my stars have all been distributed! Due to high demand, the stars have already been given out!",Rewards and loyalty
+fast and easy to use,Speed
+Fail to scan id card,Biometric
+Searching a friend is a bit complicated,Friends list
+There's an issue with the notification tab; it doesn't pop up and takes minutes to load,Notification
+Very difficult to use and verify.,UX UI
+Very quick and easy thank you,Good experience
+very good,Good experience
+Always failed to scan. Cannot get back my account. Very stupid apps.,Customer service
+Smooth and stable.,UX UI
+"Can't add credit card, the app keeps loading, pls fix",Bug
+"Can never add a credit card of my choice. When the card asked to choose from sending OTP by sms or email, the screen just freezed. Repeated N times still unsuccessful to add the card.",Bug
+Worst app wouldnt let me enter more than single number while login. How am I suppose to enter contact number,Device support
+User friendly,UX UI
+"Was asked to rescan my HKID, but the steps requires me to tilt the ID card, then moves the frame too fast and at a very large angle, and then fails you immediately when the user cannot catch up, making the process impossible to complete. Makes me wonder if the change has been tested at all before rollout. What's worse, I'm blocked from ALL other functionality in the app so I can't even use the so-called new ""Chat with me"" function to get help.",Device support
+"Great app, but unable to add credit card after last update",Update
+It was hard to scan the ID card,Biometric
+Good,Good experience
+"Face recognition in latest updates has been broken for weeks! Used my old device to log in, reject the update and transfer my money out. Account closed. Uninstalled.",Bug
+got stuck in the 'Verified ID' screen,Device support
+Encountering errors while trying to pay a friend,Payment experience
+Good,Good experience
+"Every update is making the app worse, required you to reinstall but once you did it you can never pass the face scanning, stopping at the last scan every time and pops up the useless message",Update
+I switch to a new phone. And it needs to verify me. I tried at least ten times to successfully scan my face.,Biometric
+"Never able to pass the face scanning in order to get my account back, trash design",UX UI
+The calculator is so convenient!,Education
+Fail to load,Bug
+Frequently encountering scan failures during the second phone login,Biometric
+"Infuriating!!! I'm sat there for twenty minutes or more before completely giving up doing a FACE SCAN. In the middle scanning it stops and says ""we cannot scan you face - please follow the instructions"". Well, perhaps it's the instructions or the software that is wrong because I'm pretty sure I know how to put my face IN A CIRCLE! 😡😡😡😡 I used this all the time on my old phone, now I have a new one I need to use the ridiculous face scan to identify myself and I can't get on! Madness!",UX UI
+👍,Good experience
+"Total rubbish, it is a nightmare that's repeated over and over .......",Bug
+"Failed to link HKID and bank account after multiple attempts on two different devices, so am unable to use Payme to receive or send any funds. Deregistered and uninstalled.",Device support
+Unable to open my pay me account iPhone.,Speed
+"This is the worst software I have ever used. The facial verfication is the worst, it basically can't recognize any facial expressiona t all, it just endlessly forcing you to repeat the whole process again and again. And IT JUST WON'T WORK.",Education
+"Easy to use, convenience",Accessing account
+"Unable to add credit card, after entered otp from bank, verify button not responding. Exited app and tried again, this time app hanged after entered card number.",Transaction limit
+Updates are useless as usual,Bug
+Rubbish,Others
+Disgusting app. Cannot login because the verification system is faulty. It asks to follow certain instructions which the app simply cannot register. Utterly disappointing experience. Now I can't withdraw the money out of the account,"Accessing account, Bug, Customer service"
+No notification for payment received and requests,Notification
+Unable to pay and only ask you to update but no update available,Update
+The app is stupid on the face scan login. It is so frustrating when it keep telling you to retry again and again. Will never use it again,"Biometric, Bug"
+"Garbage software, it requires facial recognition login and then keeps displaying errors","Bug, Customer service"
+"Useless app, useless customer service; changing the phone seems like borrowing tens of millions, giving up",Customer service
+"Can't scan my ID card 🤬. fix the bugs, rubbish app .",Bug
+"Oh... improvement of the bugs , but after updated it can't open the apps",Update
+It always seems to hang up very slow couldn't pay when I was shopping !,Speed
+Good,Good experience
+Easy and good to use,UX UI
+Not user friendly,UX UI
+Stupid face scan!,Biometric
+Very good,Good experience
+The verification required is ridiculous. Once done it works well enough.,Transaction limit
+Fail to connect to bank account,Internet connection
+"Useless app. Cannot recognise a face at all, but it CAN give you patronising instructions about putting your eyes inside the circles as if it was challenging. I'm not doing it wrong.... Your app is terrible!",Customer service
+Garbage app that keeps getting worse. My partner's PayMe got hacked so he contacted support to inform them and they told him to uninstall & reinstall the app to solve the problem. Absolutely useless.,Safety and Security
+Slow and not user friendly,UX UI
+Why did you change the interface to pay business as the primary button? Paying friends is my priority this is the point for payme as a p2p transaction.,Payment experience
+there is fatal error and my money is held without my authorization,Safety and Security
+Very Efficient,Good experience
+Very bad experience logging in. Tried so many times for face scan verification and failed.,UX UI
+Very very slow,Speed
+"Doesn't allow to pay only with consumer voucher, the pop-up keep hiding the QR code to pay business",Cant use voucher
+Does it work? Open the App and stays at the entry picture but does not enter into application.,Bug
+Can't scan my ID card. Keep fail,Biometric
+User friendly.,Good experience
+"If someone has a bad character, don't imitate them!",Education
+You making fun of my face now?,Friends list
+Try yourself,Others
+"Trashy app, failed verification ten times, what a joke. Deleted it and switched to HSBC.",Payment experience
+unable to install on Honor mobile phone,Device support
+"what a rubbish app, ID verification tried many many times, use difference phone were not success, app always hang, successful verified but hang on uploading at last.",Bug
+Can not to show my face,UX UI
+Dissatisfied with HSBC HK's policies.,Customer service
+"I'm sat there for twenty minutes or more before completely giving up doing a FACE SCAN. In the middle scanning it stops and says ""we cannot scan you face - please follow the instructions"". I used this all the time on my old phone, now I have a new one I need to use the ridiculous face scan to identify myself and I can't get on! Madness!",Safety and Security
+Trash app won't let me withdraw to HSBC account. Also impossible to scan ID card. Please test before releasing trash 💩,Speed

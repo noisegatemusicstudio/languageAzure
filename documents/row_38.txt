@@ -1,0 +1,2 @@
+Review: Was asked to rescan my HKID, but the steps requires me to tilt the ID card, then moves the frame too fast and at a very large angle, and then fails you immediately when the user cannot catch up, making the process impossible to complete. Makes me wonder if the change has been tested at all before rollout. What's worse, I'm blocked from ALL other functionality in the app so I can't even use the so-called new "Chat with me" function to get help.
+Categories: Device support

@@ -1,0 +1,2 @@
+Review: Doesn't allow to pay only with consumer voucher, the pop-up keep hiding the QR code to pay business
+Categories: Cant use voucher

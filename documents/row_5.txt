@@ -1,0 +1,2 @@
+Review: Low quality, poorly tested app. App wanted me to make clown faces one day and wouldn't let me access my account. Contacted support who said I needed to scan my ID card again. However the app has failed to recognise my ID the hundred or so times I've tried to scan it. The image on screen while attempting to scan is blurry and so out of focus that even I can hardly recognise it's an ID card, yet the image from the camera app is crystal clear. I seriously think they're using the camera preview API.
+Categories: UX UI

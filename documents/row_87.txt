@@ -1,0 +1,2 @@
+Review: Does it work? Open the App and stays at the entry picture but does not enter into application.
+Categories: Bug
