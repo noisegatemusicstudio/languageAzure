@@ -10,7 +10,7 @@ textAnalyticsEndpoint = 'exoduscognitiveservices.cognitiveservices.azure.com'
 sentimentEndpoint = '/text/analytics/v3.0/sentiment'
 languageEndpoint = '/text/analytics/v3.0/languages'
 keyPhrasesEndpoint = '/text/analytics/v3.0/keyPhrases'
-textAnalyticsKey = 'e683ed8e943d4c45be7bf2e42f155ab2' #os.getenv('AZURE_LANGUAGE_TOKEN')
+textAnalyticsKey = os.getenv('AZURE_LANGUAGE_TOKEN')
 
 headers = {
     'Content-Type' : 'application/json',
